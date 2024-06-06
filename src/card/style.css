@@ -1,0 +1,39 @@
+
+.card {
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    gap: 16px;
+    grid-auto-rows: auto;
+    justify-items: start;
+    align-content: start;
+    box-shadow: 0px 0px 20px 0px #0000001A;
+    transition: box-shadow 200ms;
+    border-radius: 16px;
+
+    background-color: var(--color-widget);
+}
+
+.card:hover {
+    box-shadow: 0px 0px 20px 0px #0000001A, 0px 0px 20px 0px #0000001A;
+}
+
+.card > .title {
+    grid-column: 1 / -1;
+
+    font-size: 24px;
+    color: var(--color-title);
+    font-weight: 700;
+
+    padding-bottom: 14px;
+}
+
+.card > svg.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.card > .data {
+    font-size: 14px;
+    color: var(--color-text);
+}

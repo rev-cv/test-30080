@@ -1,0 +1,17 @@
+body {
+    flex: 100%;
+}
+
+#root {
+    padding: 3rem 1rem;
+    min-height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 357px);
+    grid-template-rows: 58px; /* 48px ширина search и 10px - margin*/
+    grid-auto-rows: 314px;
+    gap: 24px;
+    justify-content: center;
+
+    background-color: var(--color-widget);
+}
